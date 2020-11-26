@@ -1,0 +1,11 @@
+{
+  "name": "illinois-scripts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/94rain/illinois-scripts.git",
+  "author": "94rain <94rain@msn.com>",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^7.25.0"
+  }
+}
