@@ -55,6 +55,8 @@
     <form action='/BANPROD1/bwskfreg.P_AltPin' method='post'>\
     	<label for='term_id'><span>Term</span></label> \
     	<select name='term_in' size='1' id='term_id'>\
+    	<option value='120218'>Fall 2021 - Urbana-Champaign</option> \
+        <option value='120215'>Summer 2021 - Urbana-Champaign</option> \
     	<option value='120211'>Spring 2021 - Urbana-Champaign</option> \
     	<option value='120210'>Winter 2020-2021 Urbana-Chmpgn</option> </select> &nbsp; \
         <div class='col-sm-offset-2 col-sm-10'> <button type='submit' class=\"btn btn-primary\">Add/Drop</button></div> \
