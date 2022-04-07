@@ -10,11 +10,12 @@
 // @require      https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js
 
 // ==/UserScript==
+let current_term = '120228';
     (function() {
     'use strict';
 
     $('body').append("<div> <form action='/BANPROD1/bwskfcls.P_GetCrse' method='post' onsubmit='return checkSubmit()'> \
-    	<input type='hidden' name='term_in' value='120211'> \
+    	<input type='hidden' name='term_in' value='120228'> \
     	<input type='hidden' name='sel_subj' value='dummy'> \
     	<input name='sel_subj' list='subjectList'> <datalist id='subjectList'> \
     	  <option>MATH</option><option>CS</option> \
@@ -49,17 +50,16 @@
     	<input type='hidden' name='path' value='1'> \
     	<input type='submit' name='SUB_BTN' value='View Sections'> </form> \
     <form action='/BANPROD1/bwckschd.p_disp_detail_sched' method='get'> \
-    	<input type='hidden' name='term_in' value='120211'> \
+    	<input type='hidden' name='term_in' value='120228'> \
     	<input type='text' name='crn_in'  value=''> \
     	<input type='submit' value='View CRN Detail'> </form> \
     <form action='/BANPROD1/bwskfreg.P_AltPin' method='post'>\
     	<label for='term_id'><span>Term</span></label> \
     	<select name='term_in' size='1' id='term_id'>\
-    	<option value='120218'>Fall 2021 - Urbana-Champaign</option> \
-        <option value='120215'>Summer 2021 - Urbana-Champaign</option> \
-    	<option value='120211'>Spring 2021 - Urbana-Champaign</option> \
-    	<option value='120210'>Winter 2020-2021 Urbana-Chmpgn</option> </select> &nbsp; \
-        <div class='col-sm-offset-2 col-sm-10'> <button type='submit' class=\"btn btn-primary\">Add/Drop</button></div> \
+		<option value='120228'>Fall 2022 - Urbana-Champaign</option> \
+		<option value='120225'>Summer 2022 - Urbana-Champaign</option> \
+		<option value='120221'>Spring 2022 - Urbana-Champaign</option> </select> \
+		<button type='submit' class=\"btn btn-primary\">Add/Drop</button> \
     	 </form> </div>");
 
 })();
