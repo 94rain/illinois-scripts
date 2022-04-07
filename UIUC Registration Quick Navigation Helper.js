@@ -2,7 +2,7 @@
 // @name         UIUC Registration Quick Navigation Helper
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
+// @description  (Deprecated, for historical reference)
 // @author       94rain
 // @match        *://ui2web1.apps.uillinois.edu/BANPROD1/*
 // @match        *://login.uillinois.edu/*

@@ -15,13 +15,17 @@ let current_term = '120228';
     'use strict';
 
     $('body').append("<div> <form action='/BANPROD1/bwskfcls.P_GetCrse' method='post' onsubmit='return checkSubmit()'> \
-    	<input type='hidden' name='term_in' value='120228'> \
+		<select name='term_in' size='1' id='term_id'>\
+			<option value='120228'>Fall 2022</option> \
+			<option value='120225'>Summer 2022</option> \
+			<option value='120221'>Spring 2022</option>  \
+		</select> \
     	<input type='hidden' name='sel_subj' value='dummy'> \
     	<input name='sel_subj' list='subjectList'> <datalist id='subjectList'> \
     	  <option>MATH</option><option>CS</option> \
     	</datalist> \
     	<input name='SEL_CRSE' list='courseList'> <datalist id='courseList'> \
-    	  <option>225</option><option>374</option><option>421</option><option>357</option> \
+    	  <option>423</option><option>425</option><option>473</option><option>357</option> \
     	</datalist> \
     	<input type='hidden' name='SEL_TITLE' value=''> \
     	<input type='hidden' name='BEGIN_HH' value='0'> \
@@ -49,17 +53,22 @@ let current_term = '120228';
     	<input type='hidden' name='crn' value='dummy'> \
     	<input type='hidden' name='path' value='1'> \
     	<input type='submit' name='SUB_BTN' value='View Sections'> </form> \
-    <form action='/BANPROD1/bwckschd.p_disp_detail_sched' method='get'> \
-    	<input type='hidden' name='term_in' value='120228'> \
-    	<input type='text' name='crn_in'  value=''> \
-    	<input type='submit' value='View CRN Detail'> </form> \
-    <form action='/BANPROD1/bwskfreg.P_AltPin' method='post'>\
-    	<label for='term_id'><span>Term</span></label> \
-    	<select name='term_in' size='1' id='term_id'>\
-		<option value='120228'>Fall 2022 - Urbana-Champaign</option> \
-		<option value='120225'>Summer 2022 - Urbana-Champaign</option> \
-		<option value='120221'>Spring 2022 - Urbana-Champaign</option> </select> \
-		<button type='submit' class=\"btn btn-primary\">Add/Drop</button> \
-    	 </form> </div>");
+    	<form action='/BANPROD1/bwckschd.p_disp_detail_sched' method='get'> \
+			<select name='term_in' size='1' id='term_id'>\
+				<option value='120228'>Fall 2022</option> \
+				<option value='120225'>Summer 2022</option> \
+				<option value='120221'>Spring 2022</option>  \
+			</select> \
+    		<input type='text' name='crn_in'  value=''> \
+    		<input type='submit' value='View CRN Detail'> </form> \
+    	<form action='/BANPROD1/bwskfreg.P_AltPin' method='post'>\
+    		<label for='term_id'><span>Term</span></label> \
+    		<select name='term_in' size='1' id='term_id'>\
+				<option value='120228'>Fall 2022</option> \
+				<option value='120225'>Summer 2022</option> \
+				<option value='120221'>Spring 2022</option>  \
+			</select> \
+			<button type='submit' class=\"btn btn-primary\">Add/Drop</button> \
+    	</form> </div>");
 
 })();
