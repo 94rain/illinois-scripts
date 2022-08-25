@@ -25,7 +25,7 @@ let current_term = '120228';
     	  <option>MATH</option><option>CS</option> \
     	</datalist> \
     	<input name='SEL_CRSE' list='courseList'> <datalist id='courseList'> \
-    	  <option>423</option><option>425</option><option>473</option><option>357</option> \
+    	  <option>423</option><option>498</option><option>598</option><option>450</option> \
     	</datalist> \
     	<input type='hidden' name='SEL_TITLE' value=''> \
     	<input type='hidden' name='BEGIN_HH' value='0'> \
@@ -69,6 +69,12 @@ let current_term = '120228';
 				<option value='120221'>Spring 2022</option>  \
 			</select> \
 			<button type='submit' class=\"btn btn-primary\">Add/Drop</button> \
-    	</form> </div>");
+    	</form> \
+    	<form action='bwskotrn.P_ViewTran' method='post'> \
+    		<input type='hidden' name='levl' value=''> \
+			<input type='hidden' name='tprt' value='WEB'> \
+			<input type='submit' value='View Transcript'> \
+		</form> \
+                     </div>");
 
 })();
