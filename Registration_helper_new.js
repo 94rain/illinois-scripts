@@ -10,12 +10,12 @@
 // @require      https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js
 
 // ==/UserScript==
-let current_term = '120228';
     (function() {
     'use strict';
 
     $('body').append("<div> <form action='/BANPROD1/bwskfcls.P_GetCrse' method='post' onsubmit='return checkSubmit()'> \
 		<select name='term_in' size='1' id='term_id'>\
+			<option value='120231'>Spring 2023</option> \
 			<option value='120228'>Fall 2022</option> \
 			<option value='120225'>Summer 2022</option> \
 			<option value='120221'>Spring 2022</option>  \
@@ -25,7 +25,7 @@ let current_term = '120228';
     	  <option>MATH</option><option>CS</option> \
     	</datalist> \
     	<input name='SEL_CRSE' list='courseList'> <datalist id='courseList'> \
-    	  <option>423</option><option>498</option><option>598</option><option>450</option> \
+    	  <option>491</option><option>498</option><option>598</option><option>473</option> \
     	</datalist> \
     	<input type='hidden' name='SEL_TITLE' value=''> \
     	<input type='hidden' name='BEGIN_HH' value='0'> \
@@ -55,6 +55,7 @@ let current_term = '120228';
     	<input type='submit' name='SUB_BTN' value='View Sections'> </form> \
     	<form action='/BANPROD1/bwckschd.p_disp_detail_sched' method='get'> \
 			<select name='term_in' size='1' id='term_id'>\
+				<option value='120231'>Spring 2023</option> \
 				<option value='120228'>Fall 2022</option> \
 				<option value='120225'>Summer 2022</option> \
 				<option value='120221'>Spring 2022</option>  \
@@ -64,6 +65,7 @@ let current_term = '120228';
     	<form action='/BANPROD1/bwskfreg.P_AltPin' method='post'>\
     		<label for='term_id'><span>Term</span></label> \
     		<select name='term_in' size='1' id='term_id'>\
+				<option value='120231'>Spring 2023</option> \
 				<option value='120228'>Fall 2022</option> \
 				<option value='120225'>Summer 2022</option> \
 				<option value='120221'>Spring 2022</option>  \
